@@ -1,0 +1,59 @@
+section {
+    font-family: "Roboto", sans-serif;
+    display: grid;
+    max-width: 900px;
+    gap: 10px;
+    grid-template-areas:"highlighted-video ad"
+                        "highlighted-video suggestions-videos";
+    grid-template-columns: 1fr 270px;
+    grid-template-rows: 56px 1fr;
+    background-color: #F7F7F7;
+    margin: 10px;
+    padding: 35px;
+}
+
+.main-video{
+    grid-area: highlighted-video;
+}
+
+.ad{
+    grid-area: ad;
+}
+
+.suggestions-videos{
+    grid-area: suggestions-videos;
+}
+
+.video {
+    display: flex;
+    margin-bottom: 5px;
+    gap: 3px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.views {
+    font-weight: 300;
+    font-size: 14px;
+    margin: 7px 0;
+}
+
+.description{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.video .title{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.video .description{
+    font-size: 11px;
+    font-weight: 300;
+    margin-top: 3px;
+    gap: 20px;
+}
